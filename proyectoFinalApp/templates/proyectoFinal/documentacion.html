@@ -1,0 +1,36 @@
+{% extends "proyectoFinal/padre.html" %}
+ 
+
+{% block content %}
+<div class="jumbotron">
+
+    <form action="/" method="POST" id="formulario">
+        <h1>Documentación</h1>
+        <div class="form-group">
+            {%load static%}
+            <h5>Simbolos</h5>
+            <p> A continuación, se mostrarán como hacer las principales operaciones:
+                operaciones (==, >>, <<, +, -, *, /, !¡):   
+            </p>
+            <img src="../static/proyectoFInalApp/img/operaciones.png" alt="operaciones" width="100%">
+            
+            <h5>Asignación</h5>
+            <p> En la siguiente imagen, podrá ver algunos ejemplos de como asignar un tipo de dato
+                a una varible. Recuerde que la variable de empezar por una letra ya sea mayúscula
+                o minuscula, luego debe agregar el signo = y después el tipo de dato (Numero, cadena):
+            </p>
+            <img src="../static/proyectoFInalApp/img/Asignacion.png" alt="Asignacion" width="100%">
+            <h5>Condicional</h5>
+            <p> En la imagen posterior imagen presentaremos como es la estructura de los condicionales 
+                para validar Instrucciones. Recuerde que debe partir por SI luego escribe la condicion 
+                y dentro de las dobles llaves escriba la instrucción a realizar:
+            </p>
+            <img src="../static/img/Condicional.png" alt="Condicional" width="100%">
+            <h5>Ciclos</h5>
+            <p> En la siguiente imagen indicaremos como es la estructura de los ciclos que son utilizados
+                para realizar instrucciones de manera periódica:
+            <img src="../static/img/Ciclos.png" alt="Ciclos" width="100%">
+        </div>
+    </form>
+</div>
+{% endblock  %}

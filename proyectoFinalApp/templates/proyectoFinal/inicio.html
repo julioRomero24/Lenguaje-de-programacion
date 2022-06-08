@@ -1,0 +1,32 @@
+
+
+{% extends "proyectoFinal/padre.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="form-group div1">
+        <form action="/" method="POST" id="formulario">
+            <div class="form-group">
+                <label for="entrada">Entrada de código</label>
+                <textarea class="form-control " id="entrada" name="texto" rows="10" style="height:100%; width: 90%">
+SI 1 >> 0 &#123&#123 
+    2 
+&#125&#125 SINO &#123&#123 
+    SI 1 << 2 &#123&#123 
+        5 
+    &#125&#125
+&#125&#125
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">validar</button>
+            <button type="submit" class="btn btn-primary btn-lg">ejecutar</button>
+        </form>
+    </div>
+    <div class="form-group div2">
+        <label for="salida">Salida</label>
+        <textarea class="form-control" id="salida" name="salida" rows="4" style="height:60%; width: 90%"
+            readonly></textarea>
+        <p id="txt"></p>
+    </div>
+</div>
+{% endblock  %}
